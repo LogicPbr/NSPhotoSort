@@ -12,8 +12,8 @@ public class NSPhotoSortMain {
 
 	public static void main(String[] args) {
 
-		String sourceDir = "E:\\NS备份\\Nintendo\\Album";
-		String resultDir = "D:\\Users\\Logic\\Pictures\\Switch";
+		String sourceDir = "F:\\Nintendo\\Album";
+		String resultDir = "D:\\Users\\Logic\\Pictures\\NS";
 		String[] split = sourceDir.split("\\\\");
 
 		NSPhotoSortFun(sourceDir, resultDir,split.length,0);
@@ -24,6 +24,7 @@ public class NSPhotoSortMain {
 	public static void NSPhotoSortFun(String source, String resultDir,int len,int x) {
 		FileInputStream is = null;
 		FileOutputStream os = null;
+
 		try {
 
 			File f = new File(source);
